@@ -1,0 +1,9 @@
+.godot/
+.import/
+*.import
+*.tres.converted
+*.scn.converted
+*.gltf.converted
+# Godot-specific editor/temp files
+.gdignore
+export_presets.cfg

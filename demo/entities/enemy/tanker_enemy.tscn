@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8vmcqok4kgj"]
+
+[ext_resource type="PackedScene" uid="uid://bwjvy0m0aget5" path="res://entities/enemy/enemy.tscn" id="1_52ea7"]
+[ext_resource type="Texture2D" uid="uid://c3xg6f6iq34hy" path="res://assets/textures/enemy/Ship/Level 1/TankerShip.png" id="2_wsi5x"]
+
+[node name="Tanker Enemy" instance=ExtResource("1_52ea7")]
+health = 40.0
+damage = 4.0
+position = Vector2(0, 15911.2)
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" parent="." index="0"]
+rotation = 1.5708
+texture = ExtResource("2_wsi5x")
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="1"]
+visible = false
+position = Vector2(-0.909091, -1.15057)
+scale = Vector2(1.90909, 2.47869)
+
+[node name="CollisionPolygon2D" parent="." index="2"]
+visible = false
+polygon = PackedVector2Array(-15.7143, -10, -15.7143, -1.42857, -14.2857, 0, -12.8571, -1.42857, -8.57143, 4.28571, -8.57143, 8.57143, -5.71429, 10, -2.85714, 20, 1.42857, 20, 4.28571, 10, 7.14286, 8.57143, 7.14286, 4.28571, 11.4286, 0, 12.8571, 1.42857, 15.7143, -1.42857, 15.7143, -10, 4.28571, -20, -5.71429, -20)
+
+[node name="Muzzle" parent="." index="4"]
+position = Vector2(0, 0)
+
+[node name="Muzzle1" type="Marker2D" parent="Muzzle" index="0"]
+position = Vector2(6.66667, 17.3333)
+
+[node name="Muzzle2" type="Marker2D" parent="Muzzle" index="1"]
+position = Vector2(-6.66667, 17.3333)
+
+[node name="Muzzle3" type="Marker2D" parent="Muzzle" index="2"]
+position = Vector2(34, -15.3333)
+rotation = -0.16057
+
+[node name="Muzzle4" type="Marker2D" parent="Muzzle" index="3"]
+position = Vector2(28.6667, 2)
+rotation = -0.16057
+
+[node name="Muzzle5" type="Marker2D" parent="Muzzle" index="4"]
+position = Vector2(-28.6667, 2.66667)
+rotation = 0.16057
+
+[node name="Muzzle6" type="Marker2D" parent="Muzzle" index="5"]
+z_index = 10
+position = Vector2(-34, -15.3333)
+rotation = 0.21293

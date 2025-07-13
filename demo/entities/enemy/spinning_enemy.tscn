@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvsgd2p7rd3d2"]
+
+[ext_resource type="PackedScene" uid="uid://bwjvy0m0aget5" path="res://entities/enemy/enemy.tscn" id="1_jfe23"]
+[ext_resource type="Texture2D" uid="uid://brl4c5j2k73bu" path="res://assets/textures/enemy/Ship/Level 1/SpinningEnemy.png" id="2_dk0i3"]
+
+[node name="Spinning Enemy" instance=ExtResource("1_jfe23")]
+health = 25.0
+position = Vector2(0, 24867.9)
+scale = Vector2(0.9, 0.9)
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_dk0i3")
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="1"]
+position = Vector2(4.5, 11.3403)
+scale = Vector2(7.21667, 7.08819)
+
+[node name="CollisionPolygon2D" parent="." index="2"]
+visible = false
+polygon = PackedVector2Array(-52.8571, -18.5714, -31.4286, 4.28571, -28.5714, 8.57143, -28.5714, 48.5714, -21.4286, 52.8571, -17.1429, 68.5714, -10, 70, -2.85714, 58.5714, 10, 55.7143, 24.2857, 17.1429, 57.1429, 0, 55.7143, -11.4286, 70, -21.4286, 67.1429, -28.5714, 47.1429, -30, 44.2857, -37.1429, 8.57143, -28.5714, 2.85714, -28.5714, -28.5714, -48.5714, -38.5714, -42.8571, -52.8571, -50, -57.1429, -45.7143, -48.5714, -31.4286)
+
+[node name="Muzzle" parent="." index="4"]
+position = Vector2(0, 0)
+
+[node name="Muzzle1" type="Marker2D" parent="Muzzle" index="0"]
+position = Vector2(-55.5556, -46.6667)
+
+[node name="Muzzle2" type="Marker2D" parent="Muzzle" index="1"]
+position = Vector2(-13.3333, 71.1111)
+
+[node name="Muzzle3" type="Marker2D" parent="Muzzle" index="2"]
+position = Vector2(68.8889, -24.4444)
