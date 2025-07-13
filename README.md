@@ -1,7 +1,3 @@
-Berikut revisi README.md kamu agar lebih profesional, mengalir, dan tetap relevan dengan makalahnya. Aku perbaiki dari segi struktur, narasi, grammar, dan tone supaya cocok dipakai di GitHub serta mencerminkan proyek akademik-mu dengan baik.
-
----
-
 # Elytra - Space Shooter Game
 
 [![Godot Engine](https://img.shields.io/badge/Godot_Engine-4.x-blue.svg)](https://godotengine.org/)
